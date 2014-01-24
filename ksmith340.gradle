@@ -1,0 +1,19 @@
+//Set the default tasks to be run
+defaultTasks 'jar'
+
+//Import java plugin
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile fileTree('lib')
+}
+
+jar {
+	manifest {
+		attributes 'Class-Path': '../../lib/resources.jar'
+	}
+}

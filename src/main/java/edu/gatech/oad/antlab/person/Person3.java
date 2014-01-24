@@ -44,8 +44,8 @@ public class Person3 {
 	private String calc(String input) {
 	  int i = 0;
 	  String str = "";
-	  while (i < input.length){
-		  str = input.CharAt(i) + str;
+	  while (i < input.length()){
+		  str = input.charAt(i) + str;
 		  i++;
 	  }
 	  
