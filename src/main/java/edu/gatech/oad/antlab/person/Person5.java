@@ -30,8 +30,13 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+		//UVW
+		String bop = input.substring(0,2); //first 2 chars
+		input = input.substring(2); //from 2 till end
+		input = input + bop; //adding first 2 to end
+		return input;
+		
+	
 	}
 	
 	/**
