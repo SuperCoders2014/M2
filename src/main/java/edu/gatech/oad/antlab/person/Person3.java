@@ -42,7 +42,13 @@ public class Person3 {
 	 * @return the reversed string
 	 */
 	private String calc(String input) {
-	  //Person 3 put your implementation here
-	  return null;
+	  int i = 0;
+	  String str = "";
+	  while (i < input.length){
+		  str = input.CharAt(i) + str;
+		  i++;
+	  }
+	  
+	  return str;
 	}
 }
