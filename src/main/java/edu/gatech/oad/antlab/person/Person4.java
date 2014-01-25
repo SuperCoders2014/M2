@@ -31,7 +31,15 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 1 put your implementation here
-      return null;
+      String str="";
+      char a;
+      for(int i=0; i<input.length(); i++) {
+         a=(char)(((int)input.charAt(i))+1);
+         str=str + a;
+       }
+       return str;
+
+
     }
     
     /**
