@@ -1,0 +1,23 @@
+//Set a default task, so if I don't give a task, this (these) will be executed
+defaultTasks  'jar'
+
+//Import a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar aka all the tasks for the assignment
+apply plugin: 'java'
+
+//Define the contents of the jar file to be the M2 folder contents 
+jar {
+        manifest {
+                attributes 'Class-Path': '../../lib/resources.jar'
+        }
+}
+
+
+//Compiles the files necessary
+dependencies {
+        compile fileTree('lib')
+}
+
+//Set up a location of repositories so that any needed library dependencies can be downloaded
+repositories {
+    mavenCentral()
+}
